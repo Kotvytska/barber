@@ -1,0 +1,162 @@
+:root {
+  --accent-color: #ff6c00;
+  --main-color: #555555;
+  --secondary-color: #303030;
+  --primary-white-color: #ffffff;
+  --additional-color: rgba(157, 164, 189, 0.6);
+  --additional-text-color: #9da4bd;
+  --accent-bg-color: #f7f7f7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: var(--main-color);
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background: rgb(228, 217, 215);
+}
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  display: inline-block;
+}
+button {
+  border: none;
+  background: transparent;
+}
+.section {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+.visually-hidden:not(:focus):not(:active) {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* hero */
+.hero-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.hero-text {
+  color: var(--additional-text-color);
+}
+.slider-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.1em;
+  color: var(--additional-text-color);
+}
+/* about us */
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.title {
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 42px;
+  line-height: 1.166;
+  letter-spacing: 0.05em;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.description {
+  margin-bottom: 20px;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+.btn {
+  display: inline-block;
+  width: 160px;
+  color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+
+  text-transform: uppercase;
+  padding: 12px 20px;
+  text-align: center;
+}
+.about-picture {
+  display: flex;
+  margin-right: 64px;
+}
+.about-picture li:not(:last-child) {
+  margin-right: 30px;
+}
+.about-wrap {
+  display: flex;
+}
+
+/* price */
+.price-title {
+  color: var(--primary-white-color);
+}
+.price-btn {
+  color: var(--primary-white-color);
+}
+/* works */
+.works {
+  margin-bottom: 44px;
+}
+.works-list {
+  display: flex;
+  justify-content: space-between;
+}
