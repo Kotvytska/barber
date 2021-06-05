@@ -19,21 +19,27 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <a href="#"><img src="./img/icons/Logo.svg" alt="логотип" /></a>
-        <nav>
-          <ul class="nav list">
-            <li class="nav-item">О нас</li>
-            <li class="nav-item">Услуги и цены</li>
-            <li class="nav-item">Мастера</li>
-            <li class="nav-item">Контакты</li>
+      <div class="container nav">
+        <a href="#" class="logo"
+          ><img src="./img/icons/Logo.svg" alt="логотип"
+        /></a>
+        <nav class="nav-box">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="" class="nav-link">О нас</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Услуги и цены</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Мастера</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
           </ul>
-          <ul class="contacts list">
+          <ul class="contacts-list">
             <li class="contacts-item">
-              <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
+              <a href="tel:+380441111111" class="contacts-link-tel"
+                >+38 044 111 11 11</a
+              >
             </li>
             <li class="contacts-item">
-              <a href="#" class="link">онлайн-запись</a>
+              <a href="#" class="contacts-link btn">онлайн-запись</a>
             </li>
           </ul>
         </nav>
@@ -41,20 +47,27 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <ul>
-            <li><a href="" class="link">Instagram</a></li>
-            <li><a href="" class="link">Youtube</a></li>
-          </ul>
-          <p class="hero-pre-title">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-text">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
-            со вкусом.
-          </p>
-          <ul class="slider list">
-            <li><button type="button" class="slider-btn">Назад</button></li>
-            <li><button type="button" class="slider-btn">Вперед</button></li>
+        <div class="container hero-box">
+          <div class="hero-wrap">
+            <p class="hero-pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-text">
+              Мы эксперты в модных мужских стрижках. <br />
+              Работаем быстро, осторожно и со вкусом.
+            </p>
+            <ul class="slider">
+              <li class="slider-list">
+                <button type="button" class="slider-btn">Назад</button>
+              </li>
+              <li class="slider-list">
+                <button type="button" class="slider-btn">Вперед</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="hero-media">
+            <li><a href="" class="hero-media-link">Instagram</a></li>
+            <li><a href="" class="hero-media-link">Youtube</a></li>
           </ul>
         </div>
       </section>
@@ -142,24 +155,32 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <h2 class="title">Наши плюсы</h2>
-          <ul>
-            <li>
-              <p>600</p>
-              <p>Довольных клиентов в день</p>
+        <div class="container advantages">
+          <h2 class="visually-hidden">Наши плюсы</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <p class="advantages-number">
+                600<sup class="advantages-plus">&plus;</sup>
+              </p>
+              <p class="advantages-description">Довольных клиентов в день</p>
             </li>
-            <li>
-              <p>50</p>
-              <p>Наград за отличный сервис</p>
+            <li class="advantages-item">
+              <p class="advantages-number">
+                50<sup class="advantages-plus">&plus;</sup>
+              </p>
+              <p class="advantages-description">Наград за отличный сервис</p>
             </li>
-            <li>
-              <p>20</p>
-              <p>Лучших мастеров Киева</p>
+            <li class="advantages-item">
+              <p class="advantages-number">
+                20<sup class="advantages-plus">&plus;</sup>
+              </p>
+              <p class="advantages-description">Лучших мастеров Киева</p>
             </li>
-            <li>
-              <p>100</p>
-              <p>Подарков постоянным клиентам</p>
+            <li class="advantages-item">
+              <p class="advantages-number">
+                100<sup class="advantages-plus">&plus;</sup>
+              </p>
+              <p class="advantages-description">Подарков нашим клиентам</p>
             </li>
           </ul>
           <div>
@@ -176,84 +197,125 @@
         <div class="container">
           <p class="pre-title">для настоящих ценителей атмосферы</p>
           <h2 class="title">Наши мастера</h2>
-          <ul>
-            <li>
-              <img src="./img/barber1.jpg" alt="Фото мастера" width="370" />
-              <p>John Smith</p>
-              <p>Extreme Barber</p>
-              <ul>
-                <li>
-                  <a href="">
-                    <svg>
-                      <use
-                        href="./img/icons/icons.svg#icon-instagram"
-                        width="20"
-                        height="20"
-                      ></use>
+          <ul class="masters-list list">
+            <li class="">
+              <img
+                src="./img/barber1.jpg"
+                alt="Фото мастера"
+                width="370"
+                class="master-pick"
+              />
+              <p class="master-name">John Smith</p>
+              <p class="master-do">Extreme Barber</p>
+              <ul class="master-list list">
+                <li class="master-item">
+                  <a href="" class="master-link"
+                    ><svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="">
-                    <svg>
-                      <use
-                        href="./img/icons/icons.svg#icon-instagram"
-                        width="20"
-                        height="20"
-                      ></use>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="">
-                    <svg>
-                      <use
-                        href="./img/icons/icons.svg#icon-instagram"
-                        width="20"
-                        height="20"
-                      ></use>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="">
-                    <svg>
-                      <use
-                        href="./img/icons/icons.svg#icon-instagram"
-                        width="20"
-                        height="20"
-                      ></use>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <img src="./img/barber2.jpg" alt="Фото мастера" width="370" />
-              <p>Michele Doe</p>
-              <p>Extreme Barber</p>
-              <ul>
-                <li>
-                  <a href="">
-                    <svg><use href="./img/icons/icons.svg#"></use></svg
-                  ></a>
+              <img
+                src="./img/barber2.jpg"
+                alt="Фото мастера"
+                width="370"
+                class="master-pick"
+              />
+              <p class="master-name">Michele Doe</p>
+              <p class="master-do">Extreme Barber</p>
+              <ul class="master-list list">
+                <li class="master-item">
+                  <a href="" class="master-link"
+                    ><svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-                <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-                <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
             <li>
-              <img src="./img/barber3.jpg" alt="Фото мастера" width="370" />
-              <p>Alan Black</p>
-              <p>Extreme Barber</p>
-              <ul>
-                <li>
-                  <a href="" aria-label="Ссылка на Instagram">Instagram</a>
+              <img
+                src="./img/barber3.jpg"
+                alt="Фото мастера"
+                width="370"
+                class="master-pick"
+              />
+              <p class="master-name">Alan Black</p>
+              <p class="master-do">Extreme Barber</p>
+              <ul class="master-list list">
+                <li class="master-item">
+                  <a href="" class="master-link"
+                    ><svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-                <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-                <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="master-item">
+                  <a href="" class="master-link">
+                    <svg width="20" height="20">
+                      <use href="./img/icons/icon.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -326,11 +388,11 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container footer-box">
         <p>&copy; Copyright 2020</p>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+        <ul class="media">
+          <li><a href="" class="media-link">Instagram</a></li>
+          <li><a href="" class="media-link">Youtube</a></li>
         </ul>
       </div>
     </footer>

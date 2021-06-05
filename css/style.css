@@ -35,14 +35,13 @@ li,
 p {
   padding: 0;
   margin: 0;
-}
-.list {
   list-style: none;
 }
-.link {
-  text-decoration: none;
+a {
   display: inline-block;
+  text-decoration: none;
 }
+
 button {
   border: none;
   background: transparent;
@@ -62,13 +61,73 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* header */
+.logo {
+  padding: 28px 0;
+}
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--primary-white-color);
+  padding: 52px 0;
+}
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link-tel:hover,
+.contacts-link-tel:focus {
+  color: var(--accent-color);
+}
+.nav-item + .nav-item {
+  margin-left: 40px;
+}
+.contacts-link-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+.contacts-link.btn {
+  color: var(--primary-white-color);
+  margin-left: 40px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.contacts-list {
+  display: flex;
+  margin-left: 322px;
+}
+
 /* hero */
+.hero-box {
+  padding-bottom: 40px;
+}
+.hero-wrap {
+  padding-left: 200px;
+}
 .hero-pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.363;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  padding-top: 142px;
+  margin-bottom: 20px;
 }
 .hero-title {
   font-family: 'Raleway', sans-serif;
@@ -76,19 +135,51 @@ button {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 .hero-text {
   color: var(--additional-text-color);
+  margin-bottom: 142px;
+}
+.slider {
+  display: flex;
+  justify-content: flex-end;
 }
 .slider-btn {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.363;
   letter-spacing: 0.1em;
-  color: var(--additional-text-color);
+  color: var(--additional-color);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--additional-color);
 }
+.slider-btn:hover,
+.slider-btn:focus {
+  color: var(--primary-white-color);
+}
+.slider-list + .slider-list {
+  margin-left: 26px;
+}
+.hero-media {
+  display: flex;
+}
+.hero-media li {
+  margin-left: 40px;
+}
+.hero-media-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  color: var(--secondary-color);
+}
+.hero-media-link:hover,
+.hero-media-link:focus {
+  color: var(--accent-color);
+}
+
 /* about us */
 .pre-title {
   font-weight: 600;
@@ -152,6 +243,107 @@ button {
 .price-btn {
   color: var(--primary-white-color);
 }
+
+/* advantages */
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+.advantages-list {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-right: 130px;
+}
+
+.advantages-item {
+  color: var(--secondary-color);
+  text-align: center;
+  width: 170px;
+  height: 133px;
+  background: var(--accent-bg-color);
+  padding: 20px 24px;
+}
+.advantages-item:last-child {
+  padding: 20px;
+}
+.advantages-item:nth-child(odd) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.advantages-item:nth-child(even) {
+  margin-top: 30px;
+}
+.advantages-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-plus {
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 1.375;
+  color: var(--accent-color);
+  text-align: center;
+}
+.advantages-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* master */
+.masters-list {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.master-list {
+  display: flex;
+  justify-content: center;
+}
+.master-pick {
+  margin-bottom: 30px;
+}
+.master-name {
+  margin-bottom: 8px;
+}
+.master-do {
+  font-size: 14px;
+  line-height: 1.357;
+
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.master-item + .master-item {
+  margin-left: 10px;
+}
+
+.master-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.master-link:hover,
+.master-link:focus {
+  fill: var(--accent-color);
+}
+
 /* works */
 .works {
   margin-bottom: 44px;
@@ -159,4 +351,18 @@ button {
 .works-list {
   display: flex;
   justify-content: space-between;
+}
+/* footer */
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+.media {
+  display: flex;
+}
+.media li {
+  margin-left: 40px;
+}
+.media-link {
+  color: var(--secondary-color);
 }
