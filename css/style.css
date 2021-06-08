@@ -28,7 +28,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  background: rgb(228, 217, 215);
+  /* background: #111319; */
 }
 ul,
 li,
@@ -61,17 +61,37 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* header */
-.logo {
-  padding: 28px 0;
+.pceudo {
+  display: flex;
+  align-items: center;
 }
+.pceudo::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin-right: 20px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  width: 100%;
+
+  z-index: 2;
+}
+.logo {
+  padding: 10px 0;
+}
+
 .nav-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
   color: var(--primary-white-color);
-  padding: 52px 0;
+  padding: 25px 0;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -114,6 +134,43 @@ button {
 }
 
 /* hero */
+.hero {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  padding-top: 100px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url('../img/bg-header.jpg');
+
+  background-size: 1125px;
+
+  background-repeat: no-repeat;
+
+  background-position: right;
+
+  position: relative;
+}
+
+/* .hero::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1125px;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(25, 28, 38, 0.2),
+    rgba(25, 28, 38, 0.2)
+  );
+} */
 .hero-box {
   padding-bottom: 40px;
 }
@@ -163,10 +220,21 @@ button {
 .slider-list + .slider-list {
   margin-left: 26px;
 }
+.hero-media.pceudo {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -2%;
+  bottom: 21%;
+}
 .hero-media {
   display: flex;
+  /* position: absolute;
+  transform: rotate(-90deg);
+  left: 0;
+  bottom: 0; */
 }
-.hero-media li {
+
+.hero-media-list + .hero-media-list {
   margin-left: 40px;
 }
 .hero-media-link {
@@ -189,6 +257,7 @@ button {
   text-transform: uppercase;
 
   color: var(--secondary-color);
+
   margin-bottom: 20px;
 }
 .title {
@@ -225,6 +294,11 @@ button {
   padding: 12px 20px;
   text-align: center;
 }
+.btn:hover,
+.btn:focus {
+  background: var(--accent-color);
+}
+
 .about-picture {
   display: flex;
   margin-right: 64px;
@@ -237,6 +311,25 @@ button {
 }
 
 /* price */
+.price {
+  position: relative;
+  background: #111319;
+}
+.price::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fon-price.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  pointer-events: none;
+}
 .price-title {
   color: var(--primary-white-color);
 }
@@ -303,6 +396,9 @@ button {
 }
 
 /* master */
+.masters {
+  background: var(--accent-bg-color);
+}
 .masters-list {
   text-align: center;
   display: flex;
@@ -365,4 +461,9 @@ button {
 }
 .media-link {
   color: var(--secondary-color);
+}
+/* footer */
+.footer {
+  background: var(--accent-bg-color);
+  padding: 58px 0;
 }
